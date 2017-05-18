@@ -2,7 +2,8 @@ Program to segment images into at least 2
 And at most 7 classes of greyscale
 
 To run from the terminal/command line  
-<pre>cd multisegmentpython  
+<pre>git clone https://github.com/aretheregods/multisegmentpython  
+cd multisegmentpython  
 python main.py name_of_your_image.jpg/png/whatever
 </pre>
 
