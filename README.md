@@ -22,7 +22,7 @@ cd multisegmentpython</pre>
 <pre>python main.py my_image.imagefile</pre>  
   
   
-<h2>If you want to have more then 2 image segmentations saved</h2>  
+<h2>If you want to have more than 2 image segmentations saved</h2>  
 <h2>Just call it from the terminal like so</h2>  
 <pre>python main.py my_image.imagefile number_of_segments</pre> <em>You can have up to 7 segmentations</em>  
   
