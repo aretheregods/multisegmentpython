@@ -6,9 +6,9 @@ The program will automatically save single and double thresholded segmentations
 <pre>git clone https://github.com/aretheregods/multisegmentpython  
 cd multisegmentpython</pre>  
   
-<h3>Initialize virtualenv in project folder <em>(Must have virtualenv installed)</em></h3>  
-<pre>pip install virtualenv` <h3>to install virtualenv on your system</h3>  
-virtualenv env</pre>  
+<h3>Initialize virtualenv in project folder <em>(Must have virtualenv installed)</h3>  
+<pre>pip install virtualenv</pre> <h3>To install virtualenv on your system</h3></em>  
+<pre>virtualenv env</pre>  
   
 <h3><em>Activate virtualenv</em></h3>  
 <h3>Windows</h3>  
