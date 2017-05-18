@@ -27,10 +27,16 @@ if not USE_PIL and not USE_CV2:
         raise RuntimeError("couldn't load ANY image library")
 
 file_name = sys.argv[1]
+
 if not sys.argv[2]:
+    initial_class = 1
+else:
+    initial_class = int(sys.argv[2])
+
+if not sys.argv[3]:
     total_classes = 2
 else:
-    total_classes = int(sys.argv[2])
+    total_classes = int(sys.argv[3])
 
 class ImageReadWrite(object):
     """expose methods for reading / writing images regardless of which
@@ -369,7 +375,7 @@ if __name__ == '__main__':
     im = imager.read(filename)
     otsu = OtsuFastMultithreshold()
     otsu.load_image(im)
-    for k in range(1,total_classes + 1):
+    for k in range(initial_class, total_classes + 1):
         savename = prefix + '_segmented_' + str(k) + extension
         kThresholds = otsu.calculate_k_thresholds(k)
         print(kThresholds)

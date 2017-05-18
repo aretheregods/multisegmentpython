@@ -18,13 +18,18 @@ cd multisegmentpython</pre>
 <pre>source env/bin/activate</pre>  
   
 <h3>To use the program,</h3>  
-<h3>Call the main.py file followed by the image you want to segment and <em>(optionally)</em> number of segmentations</h3>  
-<pre>python main.py my_image.imagefile</pre>  
+<h3>Call the main.py file followed by the image you want to segment  
+And <em>(optionally)</em> add the initial number of segmentations followed by the total number  
+For instance, if you wanted only a 3 segmented image, you'd enter</h3>  
+<pre>python main.py my_image.imagefile 3 3</pre>  
+<h3>If you wanted a single, double and 3 segmented image</h3>  
+<pre>python main.py my_image.imagefile 1 3</pre>
   
   
 <h2>If you want to have more than 2 image segmentations saved</h2>  
 <h2>Just call it from the terminal like so</h2>  
-<pre>python main.py my_image.imagefile number_of_segments</pre> <em>You can have up to 7 segmentations</em>  
+<pre>python main.py my_image.imagefile initial_segmentation total_number_of_segments</pre>  
+<em>You can have up to 7 segmentations</em>  
   
 The program will then output your resulting images titled like so "my_image_segmented_#.imagefile"  
 Where "#" is the number of classes used in the image.  
