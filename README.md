@@ -24,7 +24,7 @@ cd multisegmentpython</pre>
   
 <h2>If you want to have more then 2 image segmentations saved</h2>  
 <h2>Just call it from the terminal like so</h2>  
-<pre>python main.py my_image.imagefile number_of_segments</pre> [[You can have up to 7]]  
+<pre>python main.py my_image.imagefile number_of_segments</pre> <em>You can have up to 7 segmentations</em>  
   
 The program will then output your resulting images titled like so "my_image_segmented_#.imagefile"  
 Where "#" is the number of classes used in the image.  
