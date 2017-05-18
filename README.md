@@ -7,10 +7,10 @@ The program will automatically save single and double thresholded segmentations
 cd multisegmentpython`  
   
 ###_Initialize virtualenv in project folder (Must have virtualenv installed)_  
-`_pip install virtualenv` ###to install virtualenv on your system
+`_pip install virtualenv` ###to install virtualenv on your system  
 `virtualenv env`  
   
-###_Activate virtualenv_
+###_Activate virtualenv_  
 ###windows  
 `env/Scripts/activate`  
   
