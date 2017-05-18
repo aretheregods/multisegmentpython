@@ -27,6 +27,10 @@ if not USE_PIL and not USE_CV2:
         raise RuntimeError("couldn't load ANY image library")
 
 file_name = sys.argv[1]
+if not sys.argv[2]:
+    total_classes = 2
+else:
+    total_classes = sys.argv[2]
 
 class ImageReadWrite(object):
     """expose methods for reading / writing images regardless of which
@@ -365,7 +369,7 @@ if __name__ == '__main__':
     im = imager.read(filename)
     otsu = OtsuFastMultithreshold()
     otsu.load_image(im)
-    for k in [1, 2, 3, 4, 5]:
+    for k in xrange(1,total_classes + 1):
         savename = prefix + '_crushed_' + str(k) + extension
         kThresholds = otsu.calculate_k_thresholds(k)
         print(kThresholds)
