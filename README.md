@@ -1,4 +1,4 @@
-Program to segment images into at least 2  
+Program to segment images into at least 1  
 And at most 7 segments of greyscale  
 The program will automatically save single and double thresholded segmentations  
 
