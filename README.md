@@ -3,28 +3,28 @@ And at most 7 segments of greyscale
 The program will automatically save single and double thresholded segmentations  
 
 <h2>To run from the terminal/command line</h2>  
-`git clone https://github.com/aretheregods/multisegmentpython  
-cd multisegmentpython`  
+<pre>git clone https://github.com/aretheregods/multisegmentpython  
+cd multisegmentpython</pre>  
   
-<h3>_Initialize virtualenv in project folder (Must have virtualenv installed)_</h3>  
-`_pip install virtualenv` ###to install virtualenv on your system  
-`virtualenv env`  
+<h3>Initialize virtualenv in project folder <em>(Must have virtualenv installed)</em></h3>  
+<pre>pip install virtualenv` <h3>to install virtualenv on your system</h3>  
+virtualenv env</pre>  
   
-<h3>_Activate virtualenv_</h3>  
-<h3>windows</h3>  
-`env/Scripts/activate`  
+<h3><em>Activate virtualenv</em></h3>  
+<h3>Windows</h3>  
+<pre>env/Scripts/activate</pre>  
   
 <h3>osx/linux</h3>  
-`source env/bin/activate`  
+<pre>source env/bin/activate</pre>  
   
 <h3>To use the program,</h3>  
 <h3>call the main.py file followed by the image you want to segment</h3>  
-`python main.py my_image.imagefile`  
+<pre>python main.py my_image.imagefile</pre>  
   
   
 <h2>If you want to have more image classes saved</h2>  
 <h2>Just call it from the terminal like so</h2>  
-`python main.py my_image.imagefile number_of_segments` [[You can have up to 7]]  
+<pre>python main.py my_image.imagefile number_of_segments</pre> [[You can have up to 7]]  
   
 The program will then output your resulting images titled like so "my_image_segmented_#.imagefile"  
 Where "#" is the number of classes used in the image.  
